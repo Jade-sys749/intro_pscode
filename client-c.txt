@@ -1,4 +1,31 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+Start
+
+display required box type “S-4447” 
+display “capacity = 50 units of product ID 5233 per case”
+input scan box barcode of case type 
+    if incorrect scan then display red X and “incorrect case type”
+    if S-4447 scanned then display green check sign and “correct case has been selected”
+scan product package barcodes
+    for counter = 1-50 increment by 2
+    count = count + 2
+input number
+output total
+total = total + number
+	next
+    print total
+    print “package total is x”
+    while count < 50 
+input number 
+    total = total + number
+    count = count + 2
+    repeat
+input number
+    total = total + number
+    count = count + 2
+    until count = 50
+
+End
 

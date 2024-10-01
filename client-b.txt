@@ -1,4 +1,29 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
-
+locate product "Power Dry Me" in warehouse location 007 inventory on hand database
+search query returns "Power Dry Me" product location 003-01A bin E-5233 with a quantity of 55 units in stock
+user selects option to live map walking directions
+application returns real time location in warehouse according to 2D square grid containing cells
+	each cell is configured to an area of 6' x 6'
+	top line of each cell configured to North
+	top right corner of each cell is configured to Northeast
+	top left corner of each cell is configured to Northwest
+	bottom line of each cell configured to South
+	bottom right corner is configured to Southeast
+	bottom left corner is configured to Southwest
+	right line of each cell configured to East
+	left line of each cell configured to West
+	each cell requires 3 foot steps to pass through
+configured 2D grid of warehouse shelving configuration calculates most efficient walking path with fewest steps 	from source cell (starting point)
+	to goal cell (ending point) 
+avoids obstacles that are static like equipment, shelving, and end caps 
+application returns most direct walking path
+	print blue circle at current location source cell
+	print green circle at end goal cell
+	print line walking path connecting each cell between source cell and goal cell
+	print text walking directions following generated walking path
+	print "WALK Southeast 9 steps" 
+	print "WALK South 3 steps"
+	print "WALK East 15 steps"
+	print "You have arrived to location 003-01A bin E-5233 - Please PICK the 7.77 oz. Power Dry Me product”

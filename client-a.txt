@@ -1,4 +1,10 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
-
+select a random number 1-10
+get a guess from the user of a number between 1-10
+when the guess is incorrect
+	if the user input number is too high then display "Try lower..."
+	if the user input number is too low then display "Try higher..."
+	Get another guess from the user of a number 1-10
+print "Way to go! You got it!"
